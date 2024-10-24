@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/home';
 import { Sobre } from './Pages/sobre';
 import Servicos from './Pages/servicos';
@@ -13,30 +13,27 @@ import ResetPassword from './Pages/reset-password';
 import Faq from './Pages/faq';
 import { checkAndLoadData } from './Configurations/loadDataToFirebase';
 
-const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <Container />,
-      children: [
-        { path: '/', element: <Home /> },
-        { path: '/sobre', element: <Sobre /> },
-        { path: '/servicos', element: <Servicos /> },
-        { path: '/login', element: <Login /> },
-        { path: '/signup', element: <Signup /> },
-        { path: '/dashboard', element: <Dashboard /> },
-        { path: '/reset-password', element: <ResetPassword /> },
-        { path: '/faq', element: <Faq /> },
-      ],
-    },
-  ]
-);
+// Defina o basename somente para o ambiente de produção
+const basename = process.env.NODE_ENV === 'production' ? '/pontoverdeofc.github.io' : '';
 
 checkAndLoadData();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router} />,
+  <Router basename={basename}>
+    <Container>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/servicos" element={<Servicos />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/faq" element={<Faq />} />
+      </Routes>
+    </Container>
+  </Router>
 );
 
 reportWebVitals();

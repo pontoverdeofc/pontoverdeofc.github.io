@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa12d946.css",
-    "main.js": "/static/js/main.b660dbaa.js",
-    "static/js/453.cd9e14f4.chunk.js": "/static/js/453.cd9e14f4.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.748ab95dd246a171530452e71aa76952.svg",
-    "index.html": "/index.html",
-    "main.aa12d946.css.map": "/static/css/main.aa12d946.css.map",
-    "main.b660dbaa.js.map": "/static/js/main.b660dbaa.js.map",
-    "453.cd9e14f4.chunk.js.map": "/static/js/453.cd9e14f4.chunk.js.map"
+    "main.css": "/pontoverdeofc.github.io/static/css/main.aa12d946.css",
+    "main.js": "/pontoverdeofc.github.io/static/js/main.8723d6d0.js",
+    "static/js/453.cd9e14f4.chunk.js": "/pontoverdeofc.github.io/static/js/453.cd9e14f4.chunk.js",
+    "static/media/logo.svg": "/pontoverdeofc.github.io/static/media/logo.748ab95dd246a171530452e71aa76952.svg",
+    "index.html": "/pontoverdeofc.github.io/index.html",
+    "main.aa12d946.css.map": "/pontoverdeofc.github.io/static/css/main.aa12d946.css.map",
+    "main.8723d6d0.js.map": "/pontoverdeofc.github.io/static/js/main.8723d6d0.js.map",
+    "453.cd9e14f4.chunk.js.map": "/pontoverdeofc.github.io/static/js/453.cd9e14f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa12d946.css",
-    "static/js/main.b660dbaa.js"
+    "static/js/main.8723d6d0.js"
   ]
 }

@@ -1,8 +1,16 @@
+/* App.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remova ou ajuste o estilo do #root */
 #root {
-  max-width: 1280px;
+  /* Remova as propriedades abaixo para evitar restrições de layout */
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: center; */
 }
 
 .logo {

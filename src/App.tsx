@@ -7,10 +7,11 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Faq from './pages/Faq';
+import Servicos from './pages/Servicos';
 
 const App: React.FC = () => {
   const [buttonClicked, setButtonClicked] = useState<string>('');
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [isLoggedIn] = useState<boolean>(false);
 
   return (
     <Router>
@@ -26,7 +27,7 @@ const App: React.FC = () => {
               <Route path="/" element={<Home />} />
               <Route path="/sobre" element={<Sobre />} />
               <Route path="/faq" element={<Faq />} />
-              {/* Adicione mais rotas conforme necessário */}
+              <Route path="/servicos" element={<Servicos/>}/>
             </Routes>
           </div>
         </main>

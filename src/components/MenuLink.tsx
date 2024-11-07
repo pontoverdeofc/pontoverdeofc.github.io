@@ -18,7 +18,6 @@ const links: Link[] = [
   { title: "Home", path: "/" },
   { title: "Sobre", path: "/sobre" },
   { title: "Serviços", path: "/servicos" },
-  { title: "Login", path: "/login" },
 ];
 
 const linksLogado: Link[] = [

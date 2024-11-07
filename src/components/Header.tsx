@@ -1,6 +1,4 @@
-// src/components/Header.tsx
-
-import logo from "../images/logo.png";
+import logo from "../images/WhatsApp-Image-2024-10-17-at-15_43_00_processed.png";
 import { MenuLink } from "./MenuLink";
 
 interface HeaderProps {
